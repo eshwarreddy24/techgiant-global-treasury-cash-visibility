@@ -12,6 +12,27 @@ Connect to these CSVs in the `tableau/` folder:
 - `tableau_exception_summary.csv`
 - `tableau_four_week_forecast.csv`
 
+## Data relationships and field roles
+
+The extracts are intentionally curated as flat, dashboard-ready tables:
+
+- `tableau_cash_position.csv`: one row per account; dimensions are account, legal entity, bank, and currency; measures are closing cash, reserve, and headroom.
+- `tableau_daily_cash_flows.csv`: one row per bank movement; dimensions are date, account, currency, flow type, and counterparty; measure is USD cash impact.
+- `tableau_exception_summary.csv`: one row per status; dimensions are status and exception type; measure is count.
+- `tableau_four_week_forecast.csv`: one row per account and week; dimensions are account, entity, currency, and week; measures are projected closing cash and headroom.
+
+No relationship or join is required between these extracts for the core dashboards. Use the same account, entity, currency, and date definitions when presenting them together.
+
+Recommended calculated fields:
+
+```text
+Reserve Utilization % = [Closing_Balance_USD] / [Minimum_Reserve_USD]
+Headroom % = [Liquidity_Headroom_USD] / [Closing_Balance_USD]
+Exception Flag = IF [Status] <> "Matched" THEN 1 ELSE 0 END
+```
+
+Use the calculated fields as presentation measures only; do not overwrite the source CSVs.
+
 In Tableau Desktop, under Connect choose Text File and select the relevant CSV. Tableau's official connector instructions are here: https://help.tableau.com/current/pro/desktop/en-us/examples_excel.htm (the same Connect workflow applies to Excel; for CSV choose Text File).
 
 ## Worksheet 1 — Closing Cash by Account (USD)
@@ -84,6 +105,14 @@ Data source: `tableau_four_week_forecast.csv`.
 6. Add dashboard title: `TechGiant Inc. | Global Treasury Cash Visibility`.
 7. Check titles, labels and currency formatting; avoid clutter.
 8. Reopen the saved `.twb`/`.twbx` in Tableau Desktop before publishing it as a completed dashboard artifact.
+
+Recommended dashboard filters and interactions:
+
+- Account, legal entity, bank, and currency filters on cash views.
+- Date range and flow type filters on daily movement.
+- Status filter on the reconciliation exception view.
+- Week-ending date and account filters on the forecast view.
+- Use dashboard actions to select an account and highlight the corresponding movement and forecast context.
 
 ## Expected values to use for a top-line text/KPI note
 

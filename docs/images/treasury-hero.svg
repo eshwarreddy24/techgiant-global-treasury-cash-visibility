@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">TechGiant Global Treasury Cash Visibility</title>
+  <desc id="desc">Midnight navy finance technology banner showing bank feeds, ledger controls, cash visibility, and liquidity forecasting.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07152f"/><stop offset="0.55" stop-color="#0b2b55"/><stop offset="1" stop-color="#0b5260"/></linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#67e8f9"/><stop offset="1" stop-color="#14b8a6"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fde68a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#020617" flood-opacity=".35"/></filter>
+  </defs>
+  <rect width="1280" height="640" rx="30" fill="url(#bg)"/>
+  <circle cx="1120" cy="90" r="220" fill="#22d3ee" opacity=".08"/>
+  <circle cx="190" cy="620" r="260" fill="#14b8a6" opacity=".08"/>
+  <path d="M0 500 C260 390 410 590 670 470 S1080 330 1280 420" fill="none" stroke="#67e8f9" stroke-opacity=".16" stroke-width="2"/>
+  <g filter="url(#shadow)" transform="translate(760 145)">
+    <path d="M0 90 170 0 340 90v18H0z" fill="url(#cyan)"/>
+    <path d="M25 108h290v32H25z" fill="#0f766e"/>
+    <path d="M45 145h36v128H45zm72 0h36v128h-36zm72 0h36v128h-36zm72 0h36v128h-36z" fill="#dbeafe"/>
+    <path d="M15 280h310v32H15z" fill="#082f49"/>
+    <path d="M20 330h300v110H20z" fill="#0f2948" stroke="#67e8f9" stroke-opacity=".5"/>
+    <path d="M55 405c36-46 60-10 91-50 30-38 50 16 81-27 21-29 42 1 74-31" fill="none" stroke="url(#gold)" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="110" cy="355" r="8" fill="#67e8f9"/><circle cx="227" cy="328" r="8" fill="#67e8f9"/>
+  </g>
+  <g fill="#e0f2fe" font-family="Arial, Helvetica, sans-serif">
+    <text x="88" y="188" font-size="24" letter-spacing="5" fill="#67e8f9">TREASURY TRANSFORMATION CASE STUDY</text>
+    <text x="84" y="285" font-size="68" font-weight="700">Global Cash</text>
+    <text x="84" y="355" font-size="68" font-weight="700">Visibility</text>
+    <text x="88" y="410" font-size="25" fill="#bae6fd">Bank-to-GL reconciliation • liquidity • forecasting</text>
+    <text x="88" y="515" font-size="18" fill="#cbd5e1">Synthetic data | Excel model | Python controls | Tableau-ready reporting</text>
+  </g>
+</svg>

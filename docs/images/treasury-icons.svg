@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="210" viewBox="0 0 1200 210" role="img" aria-labelledby="title desc">
+  <title id="title">Treasury capability icons</title>
+  <desc id="desc">Six original vector icons representing bank feeds, global cash visibility, ledger reconciliation, liquidity reserves, forecasting, and data validation.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#0f766e"/></linearGradient>
+    <filter id="s" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0f172a" flood-opacity=".16"/></filter>
+  </defs>
+  <rect width="1200" height="210" rx="22" fill="#f8fafc"/>
+  <g filter="url(#s)" fill="#0b2142" stroke="#67e8f9" stroke-width="3">
+    <circle cx="100" cy="90" r="52" fill="url(#g)"/><circle cx="300" cy="90" r="52" fill="url(#g)"/>
+    <circle cx="500" cy="90" r="52" fill="url(#g)"/><circle cx="700" cy="90" r="52" fill="url(#g)"/>
+    <circle cx="900" cy="90" r="52" fill="url(#g)"/><circle cx="1100" cy="90" r="52" fill="url(#g)"/>
+  </g>
+  <g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M66 83 100 61l34 22v31H66zM77 83v31m23-31v31m23-31v31M62 119h76"/>
+    <path d="M271 99c16-34 46-39 62-11 13 23 31 25 42 3M284 104h-17V87m67 9h17v18"/>
+    <path d="M468 72h64v55h-64zM480 72v-12h40v12m-27 17h18m-18 17h28m-28 17h18"/>
+    <path d="M700 54l35 13v28c0 25-35 42-35 42s-35-17-35-42V67zM684 94l11 11 22-25"/>
+    <path d="M868 119c19-33 38-42 68-18 17 14 29 5 35-8M866 119h-18v-18m106-8h18v18"/>
+    <path d="M1065 70h58v45h-58zM1054 70h80M1077 59h34v11m-32 28 11 11 24-26"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#0b2142">
+    <text x="100" y="175">BANK FEEDS</text><text x="300" y="175">CASH VIEW</text>
+    <text x="500" y="175">LEDGER</text><text x="700" y="175">RESERVES</text>
+    <text x="900" y="175">FORECAST</text><text x="1100" y="175">VALIDATE</text>
+  </g>
+</svg>
