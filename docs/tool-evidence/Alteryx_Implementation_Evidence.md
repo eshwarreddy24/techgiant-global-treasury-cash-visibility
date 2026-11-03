@@ -17,11 +17,10 @@ The screenshots show Input Data, Dynamic Rename, Select, Formula, Filter, Join, 
 
 ## Evidence location
 
-- [`tab-13-reference.pdf`](../../evidence/reference-pdfs/tab-13-reference.pdf) — supplied Alteryx reference material.
 - [`Alteryx_Workflow_Guide.md`](../../documentation/Alteryx_Workflow_Guide.md) — repository-relative rebuild instructions.
 - [`scripts/validate_project.py`](../../scripts/validate_project.py) — reproducible Python control calculation.
 
-The PDF contains personal machine-path details in some original screenshots. The repository retains the supplied reference artifact for traceability, but does not reproduce those paths in the README or project narrative.
+The original PDF was reviewed but is not published. Some pages contained personal machine-path details; this repository records only the capability summary and the reproducibility boundary.
 
 ## Row-count reconciliation
 

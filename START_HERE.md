@@ -1,10 +1,10 @@
-# START HERE — TechGiant Global Treasury Cash Visibility Case Study
+# START HERE — Global Treasury Cash Visibility & Bank-to-GL Reconciliation
 
 ## 1. What this project is
 
-An independent, simulated Finance Transformation / Treasury Management System case study for a fictional multinational company, TechGiant Inc. The objective is to build a consolidated cash view, reconcile bank movements to general-ledger (GL) postings, prepare a short-term liquidity forecast, and document how a TMS such as Kyriba could support the process.
+I built this as an independent functional design and controls case study for a fictional multinational company, TechGiant Inc. The objective is to build a consolidated cash view, reconcile bank movements to general-ledger (GL) postings, prepare a short-term liquidity scenario and document how a TMS-neutral process could support the work.
 
-**Scope and honesty:** This project uses synthetic company, bank, transaction and FX data. Excel is used for the financial model; Python provides source-derived validation; Alteryx and Tableau are documented recreation paths with supplied reference previews. Kyriba is used for product/API documentation research only. This project is not a live Kyriba implementation or a production integration.
+**Scope and honesty:** This project uses synthetic company, bank, transaction and FX data. Excel is used for the financial model; Python provides source-derived validation; Alteryx and Tableau are documented recreation paths with historical evidence reviewed separately. Kyriba is used for product/API documentation research only. This project is not a live Kyriba implementation or a production integration.
 
 ## 2. Files to open first
 
@@ -15,8 +15,9 @@ An independent, simulated Finance Transformation / Treasury Management System ca
 5. `data/fx_rates.csv` — illustrative exchange rates to USD.
 6. `documentation/Alteryx_Workflow_Guide.md` — exact Alteryx build steps.
 7. `documentation/Tableau_Dashboard_Guide.md` — exact Tableau build steps.
-8. `documentation/Kyriba_API_Research_Log.md` — what to inspect and record in the Kyriba portal.
-9. `documentation/Interview_Notes.md` — explanation of the case and its limitations.
+8. `docs/implementation/` — proposed requirements, process, mapping, testing, migration and cutover design.
+9. `docs/resume_wording.md` — evidence-based resume and interview wording.
+10. `documentation/Kyriba_API_Research_Log.md` — documentation research boundaries.
 
 ## 3. Recommended end-to-end sequence
 
@@ -69,7 +70,7 @@ Use the curated CSVs in `tableau/`. Connect each through Tableau's **Text File**
 4. Reconciliation exceptions by status — bar chart.
 5. Optional: Four-week projected closing cash (USD) — line chart.
 
-Create a dashboard around 1200 × 800 or Automatic. Place cash/headroom at the top, movement/exceptions below, and forecast if completed. Add a note: “Independent simulated case study; synthetic data and illustrative FX rates; no live Kyriba or bank connection.” Save a native `.twb` or `.twbx` only after opening and verifying it in Tableau Desktop. The repository currently includes CSV extracts and reference preview images, not a verified native workbook.
+Create a dashboard around 1200 × 800 or Automatic. Place cash/headroom at the top, movement/exceptions below, and forecast if completed. Add a note: “Independent simulated case study; synthetic data and illustrative FX rates; no live Kyriba or bank connection.” Save a native `.twb` or `.twbx` only after opening and verifying it in Tableau Desktop. The repository currently includes CSV extracts and Excel preview images, not a verified native workbook.
 
 ### Phase D — Kyriba Developer Portal research
 
@@ -85,7 +86,11 @@ Sign in to `https://developer.kyriba.com/`. Search the portal catalogue and docu
 
 Do not invent endpoint paths, API field names, authentication schemes, permissions or sandbox access. If you only read documentation, state: “API documentation reviewed; no API execution performed.” The official Kyriba overview describes the Developer Portal as providing an API catalogue, Swagger documentation, Postman samples, change logs and use cases: https://www.kyriba.com/resources/fact-sheets/kyriba-marketplace/
 
-### Phase E — GitHub publication
+### Phase E — Implementation design pack
+
+Review `docs/implementation/README.md`. These documents are proposed portfolio artefacts. They do not represent stakeholder-approved requirements, production configuration, migration, cutover or hypercare.
+
+### Phase F — GitHub publication
 
 Create a repository named `techgiant-global-treasury-cash-visibility` and upload:
 

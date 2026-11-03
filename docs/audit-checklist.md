@@ -9,7 +9,7 @@ Completed during the portfolio correction pass:
 - [x] Verified the four-week forecast row count and arithmetic.
 - [x] Compared expected reconciliation outputs and Tableau-ready extracts with source-derived calculations.
 - [x] Added duplicate-ID, account-reference, currency-reference, column, numeric, and credential-pattern checks.
-- [x] Inspected the supplied Tableau artifact and quarantined it because it was XML with a `.twbx` extension, not a verified packaged workbook.
+- [x] Inspected the supplied Tableau artifact and removed it from the public repository because it was XML with a `.twbx` extension, not a verified packaged workbook, and contained local paths.
 - [x] Documented that no native Alteryx `.yxmd` workflow is included.
 - [x] Documented Kyriba as research/design only, with no live authentication, endpoint execution, bank connection, or production payment.
 - [x] Added implementation status, assumptions, data dictionary, Tableau status, and publishing guidance.

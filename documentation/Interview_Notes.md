@@ -2,7 +2,7 @@
 
 ## 60-second project explanation
 
-I developed an independent simulated treasury cash visibility and reconciliation case study for a fictional multinational company called TechGiant Inc. The scenario involved five bank accounts across USD, GBP, EUR and INR. I used synthetic bank statement and general-ledger data to build a consolidated cash position, translate balances into USD using illustrative FX assumptions, and identify bank-to-book exceptions. I also built a four-week scenario forecast. My plan was to use Alteryx to automate the data preparation and reconciliation workflow and Tableau to visualise cash positions, liquidity headroom and exceptions. I used Kyriba's Developer Portal documentation as a reference for understanding the TMS/API integration context; I did not claim a live Kyriba implementation.
+I developed an independent functional design and controls case study for a fictional multinational company called TechGiant Inc. The scenario involved five bank accounts across USD, GBP, EUR and INR. I used synthetic bank statement and general-ledger data to build a consolidated cash position, translate balances into USD using illustrative FX assumptions, and identify bank-to-book exceptions. I also built a four-week scenario forecast and documented a proposed TMS implementation lifecycle. Historical Alteryx and Tableau prototype evidence was reviewed, but no native Alteryx workflow or current-dataset Tableau workbook is included. I used Kyriba's Developer Portal documentation as a reference for the TMS/API context; I did not claim a live Kyriba implementation.
 
 ## Why this project?
 

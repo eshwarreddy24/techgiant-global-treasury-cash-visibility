@@ -1,0 +1,10 @@
+requirement_id,design_document,test_id,evidence,implementation_status
+BR-001,03_functional_solution_design.md,T-001,data/account_master.csv; scripts/validate_project.py,Source-derived check completed
+BR-002,03_functional_solution_design.md,T-002,data/bank_transactions.csv; scripts/validate_project.py,Validator scope documented
+BR-003,03_functional_solution_design.md,T-001,data/gl_transactions.csv,Source data included
+BR-004,05_reconciliation_and_configuration_rules.md,T-003,data/expected_bank_reconciliation.csv,Source-derived check completed
+BR-005,05_reconciliation_and_configuration_rules.md,T-004;T-005;T-009,data/expected_bank_reconciliation.csv,Core classification completed; live queue not executed
+BR-006,05_reconciliation_and_configuration_rules.md,T-006,data/expected_gl_only_review.csv,Source-derived check completed
+BR-007,03_functional_solution_design.md,T-007;T-008,data/cash_position.csv; scripts/validate_project.py,Source-derived check completed
+BR-008,03_functional_solution_design.md,T-008,data/four_week_forecast.csv,Scenario model included; not back-tested
+BR-009,07_data_migration_and_reconciliation.md,T-010,docs/implementation/07_data_migration_and_reconciliation.md,Proposed design only

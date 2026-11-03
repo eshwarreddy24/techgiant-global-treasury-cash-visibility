@@ -11,3 +11,9 @@ Thumbs.db
 
 # Keep evidence intentional and sanitized
 evidence/private/
+
+# Tableau and local analysis artefacts
+*.hyper
+*.twb~
+tableau/temp/
+outputs/*.tmp

@@ -170,9 +170,9 @@ The repository includes supplied reference previews for the Excel model and fore
 | Excel cash model and linked control formulas | Included |
 | Python source-derived validation | Included and tested |
 | Tableau-ready extracts | Included and validated |
-| Alteryx workflow evidence | Historical screenshots in supplied reference PDF; rebuild guide provided |
-| Tableau prototype evidence | Historical screenshots in supplied reference PDF; current extracts provided |
-| Native Tableau workbook | Not verified; legacy XML artifact quarantined |
+| Alteryx workflow evidence | Historical screenshots reviewed; sanitised assets are not currently published |
+| Tableau prototype evidence | Historical screenshots reviewed; current extracts provided |
+| Native Tableau workbook | Not verified; invalid local-path XML artifact removed |
 | Native Alteryx `.yxmd` workflow | Not included |
 | Kyriba API research | Documentation/design research only |
 | SAP, bank connectivity, SWIFT, live TMS, or production payments | Not implemented |
@@ -190,6 +190,7 @@ See [`docs/implementation-status.md`](docs/implementation-status.md) for the evi
 | [`tests/`](tests/) | Automated regression tests |
 | [`tableau/`](tableau/) | Validated Tableau-ready extracts and status guide |
 | [`docs/`](docs/) | Architecture, assumptions, status, audit, evidence, and metadata guides |
+| [`docs/implementation/`](docs/implementation/) | Proposed requirements, process, mapping, testing, migration and cutover design |
 | [`documentation/`](documentation/) | Detailed Alteryx, Tableau, Kyriba, interview, and resume notes |
 | [`evidence/`](evidence/) | Supplied reference PDFs and evidence notes |
 | [`docs/images/`](docs/images/) | Original local SVG visual assets |

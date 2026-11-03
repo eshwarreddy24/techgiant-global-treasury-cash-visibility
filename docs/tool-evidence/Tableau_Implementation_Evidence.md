@@ -14,9 +14,8 @@ That evidence demonstrates practical worksheet and dashboard work: connecting a 
 
 ## Historical versus current data
 
-The screenshots are dated from an earlier project iteration and display INR-denominated values. The current repository uses a different, audited synthetic dataset with USD reporting outputs. The screenshots are therefore kept as historical prototype evidence and are not used for the current KPI figures.
+The reviewed screenshots are dated from an earlier project iteration and display INR-denominated values. The current repository uses a different, audited synthetic dataset with USD reporting outputs. The screenshots are therefore treated as historical prototype evidence and are not used for the current KPI figures.
 
-- [`tab-03-reference.pdf`](../../evidence/reference-pdfs/tab-03-reference.pdf) — supplied historical Tableau reference material.
 - [`tableau/`](../../tableau/) — current validated CSV extracts.
 - [`Tableau_Dashboard_Guide.md`](../../documentation/Tableau_Dashboard_Guide.md) — instructions for rebuilding the current dashboard.
 
@@ -34,4 +33,4 @@ The values are source-derived and can be checked against `scripts/validate_proje
 
 ## Status
 
-No verified native `.twb` or `.twbx` file is present. The old XML artifact remains quarantined in `tableau/legacy/` and is not described as a working Tableau workbook. The next genuine Tableau deliverable would be a rebuilt workbook opened and checked in Tableau Desktop against the current CSV extracts.
+No verified native `.twb` or `.twbx` file is present. The old XML artifact was removed from the public repository because it was not portable and contained local paths. The next genuine Tableau deliverable would be a rebuilt workbook opened and checked in Tableau Desktop against the current CSV extracts.

@@ -2,7 +2,7 @@
 
 ## Implementation status
 
-The repository contains validated Tableau-ready CSV extracts and supplied preview images. It does not contain a verified native Tableau workbook. The legacy XML artifact is quarantined under `tableau/legacy/`; do not present it as a working `.twbx`.
+The repository contains validated Tableau-ready CSV extracts and supplied preview images. It does not contain a verified native Tableau workbook. The earlier XML artifact was removed because it was not a portable `.twbx` and contained local paths; do not recreate that claim.
 
 ## Data files
 

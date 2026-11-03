@@ -1,0 +1,16 @@
+source_file,source_field,target_business_field,transformation,validation_rule,mandatory,notes
+data/account_master.csv,Account_ID,Account identifier,Trim and preserve source value,Unique and nonblank,Yes,Proposed target account key
+data/account_master.csv,Legal_Entity,Legal entity,Map to entity master,Must be one of four source entities,Yes,Synthetic entity value
+data/account_master.csv,Currency,Account currency,Uppercase,Must be USD GBP EUR or INR,Yes,Source currency
+data/account_master.csv,Opening_Balance_Local,Opening balance,Parse decimal,Numeric,Yes,Used in cash roll-forward
+data/account_master.csv,Minimum_Reserve_Local,Minimum reserve,Parse decimal,Numeric and non-negative,Yes,Used in headroom
+data/bank_transactions.csv,Bank_Ref,Bank transaction reference,Trim and uppercase,Unique and nonblank,Yes,Composite matching key component
+data/bank_transactions.csv,Account_ID,Bank account,Map to account master,Must exist in account master,Yes,Composite matching key component
+data/bank_transactions.csv,Currency,Transaction currency,Uppercase,Must equal account currency,Yes,Composite matching key component
+data/bank_transactions.csv,Cash_Impact_Local,Signed cash impact,Parse decimal,Numeric,Yes,Receipts positive and payments negative
+data/gl_transactions.csv,GL_Ref,GL reference,Trim and uppercase,Nonblank,Yes,Composite matching key component
+data/gl_transactions.csv,Account_ID,GL account,Map to account master,Must exist in account master,Yes,Composite matching key component
+data/gl_transactions.csv,Currency,GL currency,Uppercase,Must equal account currency,Yes,Composite matching key component
+data/gl_transactions.csv,GL_Cash_Impact_Local,Signed GL cash impact,Parse decimal,Numeric,Yes,Aggregated before matching
+data/fx_rates.csv,Currency,Source currency,Uppercase,One row per currency,Yes,Illustrative USD conversion
+data/fx_rates.csv,USD_Per_Local,USD conversion rate,Parse decimal,Positive numeric rate,Yes,Not a market quote
