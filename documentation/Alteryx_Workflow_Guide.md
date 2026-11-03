@@ -139,3 +139,7 @@ From the Union output, connect a Summarize tool:
 | GL-only | 1 |
 
 If counts differ, inspect the Join keys and data types first. Do not deduplicate BT014 before the Summarize step; its duplicate is a deliberate test condition.
+
+## Implementation status
+
+This is a recreation guide. No native `.yxmd` workflow or Alteryx execution log is included in this repository. The source-derived executable validation is implemented in `scripts/validate_project.py`.

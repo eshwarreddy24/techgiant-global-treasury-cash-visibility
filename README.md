@@ -34,10 +34,11 @@ The cash position is calculated from opening balances plus bank-statement moveme
 |---|---|
 | `TechGiant_Global_Cash_Visibility_Project.xlsx` | Main Excel model, control tests, cash position, and forecast |
 | `data/` | Synthetic source data and expected reconciliation outputs |
-| `tableau/` | Tableau-ready extracts, preview images, and packaged workbook |
+| `tableau/` | Tableau-ready extracts and legacy-artifact status |
 | `documentation/` | Build guides, interview notes, API research log, and resume wording |
 | `docs/workflow.md` | End-to-end process flowchart and implementation narrative |
 | `scripts/validate_project.py` | Dependency-free structural and control validation |
+| `docs/implementation-status.md` | Honest status of Excel, Python, Alteryx, Tableau, and Kyriba work |
 | `evidence/` | Reserved for screenshots of locally completed Alteryx/Tableau work |
 | `outputs/` | Reserved for generated Alteryx outputs |
 
@@ -65,6 +66,8 @@ flowchart LR
 
 See [`docs/workflow.md`](docs/workflow.md) for the detailed flow, controls, and implementation decisions.
 
+The correction and evidence checklist is in [`docs/audit-checklist.md`](docs/audit-checklist.md). Implementation boundaries are documented in [`docs/implementation-status.md`](docs/implementation-status.md) and [`docs/assumptions-and-controls.md`](docs/assumptions-and-controls.md).
+
 ## Quick start
 
 From this project folder:
@@ -75,13 +78,13 @@ python scripts/validate_project.py
 
 The validator uses only the Python standard library. It checks that the expected CSVs exist, row counts are consistent, the known control exceptions are present, the portfolio metrics reconcile, and the repository contains no obvious secret-file patterns.
 
-For the full case-study walkthrough, start with [`START_HERE.md`](START_HERE.md), then open the Excel workbook. The Alteryx and Tableau guides document the exact build steps for recreating the workflow in those tools.
+For the full case-study walkthrough, start with [`START_HERE.md`](START_HERE.md), then open the Excel workbook. The Alteryx and Tableau guides document the exact build steps for recreating the workflow in those tools. Tableau currently has validated CSV extracts and preview images, not a verified native workbook.
 
 ## Scope and integrity statement
 
 This is a simulated learning project. It is not a live TechGiant engagement, bank connection, Kyriba implementation, SAP integration, or production payment process. Kyriba is referenced for product and API context only; the project does not claim live API execution. Any future API work must be performed in an authorised sandbox and documented separately without publishing credentials or tokens.
 
-Only claim Alteryx workflow execution or Tableau dashboard completion after personally running and saving those artifacts in the relevant software. The supplied packaged Tableau workbook is included as a reference artifact; screenshots in `evidence/` should be added only when they represent work you have actually completed.
+Only claim Alteryx workflow execution or Tableau dashboard completion after personally running and saving those artifacts in the relevant software. No native `.yxmd` or verified `.twb/.twbx` is claimed in this repository. Screenshots in `evidence/` should be treated as supplied reference material unless they represent work you have personally completed.
 
 ## Portfolio positioning
 

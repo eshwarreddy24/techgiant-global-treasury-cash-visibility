@@ -4,7 +4,7 @@
 
 An independent, simulated Finance Transformation / Treasury Management System case study for a fictional multinational company, TechGiant Inc. The objective is to build a consolidated cash view, reconcile bank movements to general-ledger (GL) postings, prepare a short-term liquidity forecast, and document how a TMS such as Kyriba could support the process.
 
-**Scope and honesty:** This project uses synthetic company, bank, transaction and FX data. The data is not from TechGiant, a real client or a real bank. Excel is used for the financial model, Alteryx for data preparation and reconciliation, and Tableau for visual reporting. Kyriba is used for product/API documentation research only unless an authorised sandbox/API execution is separately completed and evidenced. This project is not a live Kyriba implementation or a production integration.
+**Scope and honesty:** This project uses synthetic company, bank, transaction and FX data. Excel is used for the financial model; Python provides source-derived validation; Alteryx and Tableau are documented recreation paths with supplied reference previews. Kyriba is used for product/API documentation research only. This project is not a live Kyriba implementation or a production integration.
 
 ## 2. Files to open first
 
@@ -41,7 +41,9 @@ Core formulas:
 
 A positive or negative variance is not automatically a loss; it is an exception to investigate. Do not offset or hide exception records.
 
-### Phase B — Alteryx workflow
+### Phase B — Alteryx workflow guide
+
+No native `.yxmd` workflow is included. The following steps describe how to recreate and run the workflow in Alteryx Designer; the completed Python validator is the executable control check in this repository.
 
 Build a workflow called `TechGiant_Bank_GL_Reconciliation.yxmd` using the input files in `data/`.
 
@@ -57,7 +59,7 @@ Build a workflow called `TechGiant_Bank_GL_Reconciliation.yxmd` using the input 
 
 Expected counts: Bank input 20; GL input 21; J output 19; L output 1; R output 1; combined bank-side reconciliation 20. Final bank-side statuses: 17 Matched, 1 Missing in GL, 1 Amount mismatch, 1 Duplicate in GL. One separate GL-only record.
 
-### Phase C — Tableau dashboard
+### Phase C — Tableau dashboard guide
 
 Use the curated CSVs in `tableau/`. Connect each through Tableau's **Text File** connector. Build at least four worksheets:
 
@@ -67,7 +69,7 @@ Use the curated CSVs in `tableau/`. Connect each through Tableau's **Text File**
 4. Reconciliation exceptions by status — bar chart.
 5. Optional: Four-week projected closing cash (USD) — line chart.
 
-Create a dashboard around 1200 × 800 or Automatic. Place cash/headroom at the top, movement/exceptions below, and forecast if completed. Add a note: “Independent simulated case study; synthetic data and illustrative FX rates; no live Kyriba or bank connection.” Save a `.twb` or `.twbx` and export a dashboard image if your Tableau edition supports it.
+Create a dashboard around 1200 × 800 or Automatic. Place cash/headroom at the top, movement/exceptions below, and forecast if completed. Add a note: “Independent simulated case study; synthetic data and illustrative FX rates; no live Kyriba or bank connection.” Save a native `.twb` or `.twbx` only after opening and verifying it in Tableau Desktop. The repository currently includes CSV extracts and reference preview images, not a verified native workbook.
 
 ### Phase D — Kyriba Developer Portal research
 
@@ -90,12 +92,12 @@ Create a repository named `techgiant-global-treasury-cash-visibility` and upload
 - Root `README.md` and this `START_HERE.md`.
 - The Excel workbook.
 - `data/` source CSVs.
-- `tableau/` curated CSVs.
+- `tableau/` curated CSVs and Tableau status documentation.
 - `documentation/` guides and interview notes.
 - `outputs/` Alteryx output CSVs after your workflow runs.
 - `evidence/` screenshots of Excel checks, Alteryx workflow/run and Tableau dashboard.
-- `TechGiant_Bank_GL_Reconciliation.yxmd`.
-- Your Tableau workbook `.twb` or `.twbx` if your edition allows saving it.
+- `TechGiant_Bank_GL_Reconciliation.yxmd` only after you build and run a genuine native workflow.
+- A Tableau workbook `.twb` or `.twbx` only after you build, open, and verify it in Tableau Desktop.
 
 Before making the repository public, inspect every file for credentials, tokens, personal information or real company data. Never upload Kyriba API keys/tokens, private connection strings or confidential screenshots.
 
@@ -146,8 +148,9 @@ The closing cash is calculated from opening balances plus bank statement movemen
 The project is ready to describe as completed only when:
 
 - The Excel model has been reviewed and the 10 control tests pass.
+- The Python validator passes from source data.
 - The Alteryx workflow has been built, run and saved; counts and exception results agree with expected outputs.
-- The Tableau dashboard has been created and saved with the required views.
+- The Tableau dashboard has been created, saved, and reopened with the required views.
 - Kyriba API research records exact information seen in the user's portal, or transparently states that only documentation was available.
 - GitHub contains the workbook, synthetic data, saved workflows, dashboard evidence and clear limitations.
 

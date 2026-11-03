@@ -1,5 +1,9 @@
 # Tableau Dashboard Guide — Treasury Cash Visibility
 
+## Implementation status
+
+The repository contains validated Tableau-ready CSV extracts and supplied preview images. It does not contain a verified native Tableau workbook. The legacy XML artifact is quarantined under `tableau/legacy/`; do not present it as a working `.twbx`.
+
 ## Data files
 
 Connect to these CSVs in the `tableau/` folder:
@@ -79,6 +83,7 @@ Data source: `tableau_four_week_forecast.csv`.
 5. Add a text note: “Synthetic training case study; illustrative FX rates; not a live Kyriba or bank connection.”
 6. Add dashboard title: `TechGiant Inc. | Global Treasury Cash Visibility`.
 7. Check titles, labels and currency formatting; avoid clutter.
+8. Reopen the saved `.twb`/`.twbx` in Tableau Desktop before publishing it as a completed dashboard artifact.
 
 ## Expected values to use for a top-line text/KPI note
 
