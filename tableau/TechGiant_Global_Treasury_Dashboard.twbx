@@ -1,0 +1,1806 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0819.2015                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='96c89844ac79dec7bf02f22050cb5ba69a0805a43a59ab540f339ee48ec4b68c' _.fcp.WorkbookFingerprinting.true...creator-author-id='96c89844ac79dec7bf02f22050cb5ba69a0805a43a59ab540f339ee48ec4b68c' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='70a0800da23a7ca278433e3c32d047b79bd2de021324e8c5290d9ed706307fe6' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='70a0800da23a7ca278433e3c32d047b79bd2de021324e8c5290d9ed706307fe6' original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <repository-location id='TechGiant_Global_Treasury_Dashboard' path='/workbooks' revision='1.2' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Reconciliation (TechGiant_Treasury_Analysis)' inline='true' name='federated.0kk322f0c3gejd12ut93p12rpxpe' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='TechGiant_Treasury_Analysis' name='excel-direct.1r7y3qb1ienr7k1508xn4135b0l0'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/geshw/OneDrive/Desktop/TechGiant_Treasury_Analysis.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1r7y3qb1ienr7k1508xn4135b0l0' name='Reconciliation' table='[Reconciliation$]' type='table'>
+          <columns gridOrigin='A1:T21:no:A1:T21:0' header='yes' outcome='2'>
+            <column datatype='date' name='Transaction_Date' ordinal='0' />
+            <column datatype='string' name='Bank_Reference' ordinal='1' />
+            <column datatype='string' name='Bank_Description' ordinal='2' />
+            <column datatype='integer' name='Bank_Debit' ordinal='3' />
+            <column datatype='integer' name='Bank_Credit' ordinal='4' />
+            <column datatype='integer' name='Bank_Net' ordinal='5' />
+            <column datatype='integer' name='ERP_Reference_Count' ordinal='6' />
+            <column datatype='integer' name='ERP_Debit' ordinal='7' />
+            <column datatype='integer' name='ERP_Credit' ordinal='8' />
+            <column datatype='integer' name='ERP_Net' ordinal='9' />
+            <column datatype='string' name='Reconciliation_Status' ordinal='10' />
+            <column datatype='real' name='F12' ordinal='11' />
+            <column datatype='date' name='ERP_Posting_Date' ordinal='12' />
+            <column datatype='string' name='ERP_Reference' ordinal='13' />
+            <column datatype='string' name='ERP_Description' ordinal='14' />
+            <column datatype='integer' name='ERP_Net 1' ordinal='15' />
+            <column datatype='string' name='Exception_Status' ordinal='16' />
+            <column datatype='real' name='F18' ordinal='17' />
+            <column datatype='string' name='Treasury Reconciliation Summary' ordinal='18' />
+            <column datatype='integer' name='F20' ordinal='19' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:T21:no:A1:T21:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction_Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Transaction_Date]</local-name>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias>Transaction_Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bank_Reference</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Bank_Reference]</local-name>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias>Bank_Reference</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bank_Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Bank_Description]</local-name>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias>Bank_Description</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bank_Debit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bank_Debit]</local-name>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias>Bank_Debit</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bank_Credit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bank_Credit]</local-name>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias>Bank_Credit</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bank_Net</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bank_Net]</local-name>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias>Bank_Net</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ERP_Reference_Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ERP_Reference_Count]</local-name>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias>ERP_Reference_Count</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ERP_Debit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ERP_Debit]</local-name>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias>ERP_Debit</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ERP_Credit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ERP_Credit]</local-name>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias>ERP_Credit</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ERP_Net</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ERP_Net]</local-name>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias>ERP_Net</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reconciliation_Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Reconciliation_Status]</local-name>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias>Reconciliation_Status</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F12</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F12]</local-name>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias>F12</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ERP_Posting_Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[ERP_Posting_Date]</local-name>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias>ERP_Posting_Date</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ERP_Reference</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ERP_Reference]</local-name>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias>ERP_Reference</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ERP_Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ERP_Description]</local-name>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias>ERP_Description</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ERP_Net 1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ERP_Net 1]</local-name>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias>ERP_Net 1</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exception_Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Exception_Status]</local-name>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias>Exception_Status</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F18</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F18]</local-name>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias>F18</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Treasury Reconciliation Summary</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Treasury Reconciliation Summary]</local-name>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias>Treasury Reconciliation Summary</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F20</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F20]</local-name>
+            <parent-name>[Reconciliation]</parent-name>
+            <remote-alias>F20</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Bank Credit' datatype='integer' name='[Bank_Credit]' role='measure' type='quantitative' />
+      <column caption='Bank Debit' datatype='integer' name='[Bank_Debit]' role='measure' type='quantitative' />
+      <column caption='Bank Description' datatype='string' name='[Bank_Description]' role='dimension' type='nominal' />
+      <column caption='Bank Net' datatype='integer' name='[Bank_Net]' role='measure' type='quantitative' />
+      <column caption='Bank Reference' datatype='string' name='[Bank_Reference]' role='dimension' type='nominal' />
+      <column caption='ERP Credit' datatype='integer' name='[ERP_Credit]' role='measure' type='quantitative' />
+      <column caption='ERP Debit' datatype='integer' name='[ERP_Debit]' role='measure' type='quantitative' />
+      <column caption='ERP Description' datatype='string' name='[ERP_Description]' role='dimension' type='nominal' />
+      <column caption='ERP Net 1' datatype='integer' name='[ERP_Net 1]' role='measure' type='quantitative' />
+      <column caption='ERP Net' datatype='integer' name='[ERP_Net]' role='measure' type='quantitative' />
+      <column caption='ERP Posting Date' datatype='date' name='[ERP_Posting_Date]' role='dimension' type='ordinal' />
+      <column caption='ERP Reference' datatype='string' name='[ERP_Reference]' role='dimension' type='nominal' />
+      <column caption='ERP Reference Count' datatype='integer' name='[ERP_Reference_Count]' role='measure' type='quantitative' />
+      <column caption='Exception Status' datatype='string' name='[Exception_Status]' role='dimension' type='nominal' />
+      <column caption='Reconciliation Status' datatype='string' name='[Reconciliation_Status]' role='dimension' type='nominal' />
+      <column caption='Transaction Date' datatype='date' name='[Transaction_Date]' role='dimension' type='ordinal' />
+      <column caption='Reconciliation' datatype='table' name='[__tableau_internal_object_id__].[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/geshw/AppData/Local/Temp/TableauTemp/#TableauTemp_0g37es30l1plas15zwehi1yjq1o2.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/02/2026 09:01:53 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Transaction_Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Transaction_Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Transaction_Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Reconciliation</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bank_Reference</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Bank_Reference]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bank_Reference</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Reconciliation</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bank_Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Bank_Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bank_Description</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Reconciliation</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bank_Debit</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Bank_Debit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bank_Debit</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Reconciliation</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bank_Credit</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Bank_Credit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bank_Credit</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Reconciliation</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bank_Net</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Bank_Net]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bank_Net</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Reconciliation</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ERP_Reference_Count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ERP_Reference_Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ERP_Reference_Count</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Reconciliation</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ERP_Debit</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ERP_Debit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ERP_Debit</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Reconciliation</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ERP_Credit</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ERP_Credit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ERP_Credit</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Reconciliation</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ERP_Net</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ERP_Net]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ERP_Net</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Reconciliation</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Reconciliation_Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Reconciliation_Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Reconciliation_Status</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Reconciliation</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F12</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F12]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F12</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Reconciliation</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ERP_Posting_Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[ERP_Posting_Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ERP_Posting_Date</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Reconciliation</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ERP_Reference</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ERP_Reference]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ERP_Reference</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Reconciliation</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ERP_Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ERP_Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ERP_Description</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Reconciliation</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ERP_Net 1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ERP_Net 1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ERP_Net 1</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Reconciliation</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Exception_Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Exception_Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Exception_Status</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Reconciliation</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F18</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F18]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F18</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Reconciliation</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Treasury Reconciliation Summary</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Treasury Reconciliation Summary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Treasury Reconciliation Summary</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Reconciliation</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F20</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F20]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F20</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Reconciliation</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Reconciliation_4D9939C5D4654B2B809D8BE408358E9E]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Reconciliation' id='Reconciliation_4D9939C5D4654B2B809D8BE408358E9E'>
+            <properties context=''>
+              <relation connection='excel-direct.1r7y3qb1ienr7k1508xn4135b0l0' name='Reconciliation' table='[Reconciliation$]' type='table'>
+                <columns gridOrigin='A1:T21:no:A1:T21:0' header='yes' outcome='2'>
+                  <column datatype='date' name='Transaction_Date' ordinal='0' />
+                  <column datatype='string' name='Bank_Reference' ordinal='1' />
+                  <column datatype='string' name='Bank_Description' ordinal='2' />
+                  <column datatype='integer' name='Bank_Debit' ordinal='3' />
+                  <column datatype='integer' name='Bank_Credit' ordinal='4' />
+                  <column datatype='integer' name='Bank_Net' ordinal='5' />
+                  <column datatype='integer' name='ERP_Reference_Count' ordinal='6' />
+                  <column datatype='integer' name='ERP_Debit' ordinal='7' />
+                  <column datatype='integer' name='ERP_Credit' ordinal='8' />
+                  <column datatype='integer' name='ERP_Net' ordinal='9' />
+                  <column datatype='string' name='Reconciliation_Status' ordinal='10' />
+                  <column datatype='real' name='F12' ordinal='11' />
+                  <column datatype='date' name='ERP_Posting_Date' ordinal='12' />
+                  <column datatype='string' name='ERP_Reference' ordinal='13' />
+                  <column datatype='string' name='ERP_Description' ordinal='14' />
+                  <column datatype='integer' name='ERP_Net 1' ordinal='15' />
+                  <column datatype='string' name='Exception_Status' ordinal='16' />
+                  <column datatype='real' name='F18' ordinal='17' />
+                  <column datatype='string' name='Treasury Reconciliation Summary' ordinal='18' />
+                  <column datatype='integer' name='F20' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='ERP-only Exceptions'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Reconciliation (TechGiant_Treasury_Analysis)' name='federated.0kk322f0c3gejd12ut93p12rpxpe' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kk322f0c3gejd12ut93p12rpxpe'>
+            <column caption='ERP Description' datatype='string' name='[ERP_Description]' role='dimension' type='nominal' />
+            <column caption='ERP Net 1' datatype='integer' name='[ERP_Net 1]' role='measure' type='quantitative' />
+            <column caption='ERP Reference' datatype='string' name='[ERP_Reference]' role='dimension' type='nominal' />
+            <column caption='Exception Status' datatype='string' name='[Exception_Status]' role='dimension' type='nominal' />
+            <column-instance column='[ERP_Description]' derivation='None' name='[none:ERP_Description:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ERP_Reference]' derivation='None' name='[none:ERP_Reference:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Exception_Status]' derivation='None' name='[none:Exception_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ERP_Net 1]' derivation='Sum' name='[sum:ERP_Net 1:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kk322f0c3gejd12ut93p12rpxpe].[none:Exception_Status:nk]'>
+            <groupfilter function='member' level='[none:Exception_Status:nk]' member='&quot;ERP only&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0kk322f0c3gejd12ut93p12rpxpe].[none:Exception_Status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0kk322f0c3gejd12ut93p12rpxpe].[none:ERP_Description:nk]' value='176' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0kk322f0c3gejd12ut93p12rpxpe].[sum:ERP_Net 1:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0kk322f0c3gejd12ut93p12rpxpe].[none:ERP_Reference:nk] / [federated.0kk322f0c3gejd12ut93p12rpxpe].[none:ERP_Description:nk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{BB8E9518-3938-4A35-9723-427AE33AD68A}' />
+    </worksheet>
+    <worksheet name='Reconciliation Status'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Reconciliation (TechGiant_Treasury_Analysis)' name='federated.0kk322f0c3gejd12ut93p12rpxpe' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kk322f0c3gejd12ut93p12rpxpe'>
+            <column caption='Bank Reference' datatype='string' name='[Bank_Reference]' role='dimension' type='nominal' />
+            <column caption='Reconciliation Status' datatype='string' name='[Reconciliation_Status]' role='dimension' type='nominal' />
+            <column-instance column='[Bank_Reference]' derivation='Count' name='[cnt:Bank_Reference:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Reconciliation_Status]' derivation='None' name='[none:Reconciliation_Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0kk322f0c3gejd12ut93p12rpxpe].[none:Reconciliation_Status:nk]</rows>
+        <cols>[federated.0kk322f0c3gejd12ut93p12rpxpe].[cnt:Bank_Reference:qk]</cols>
+      </table>
+      <simple-id uuid='{BF84C56B-41B7-4D4F-83FC-2876218B4716}' />
+    </worksheet>
+    <worksheet name='Total Bank Inflows'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Reconciliation (TechGiant_Treasury_Analysis)' name='federated.0kk322f0c3gejd12ut93p12rpxpe' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kk322f0c3gejd12ut93p12rpxpe'>
+            <column caption='Bank Credit' datatype='integer' name='[Bank_Credit]' role='measure' type='quantitative' />
+            <column-instance column='[Bank_Credit]' derivation='Sum' name='[sum:Bank_Credit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0kk322f0c3gejd12ut93p12rpxpe].[sum:Bank_Credit:qk]</cols>
+      </table>
+      <simple-id uuid='{0F576941-AAA3-4AC7-A85F-12E4DE286A06}' />
+    </worksheet>
+    <worksheet name='Total Bank Outflows'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Reconciliation (TechGiant_Treasury_Analysis)' name='federated.0kk322f0c3gejd12ut93p12rpxpe' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kk322f0c3gejd12ut93p12rpxpe'>
+            <column caption='Bank Debit' datatype='integer' name='[Bank_Debit]' role='measure' type='quantitative' />
+            <column-instance column='[Bank_Debit]' derivation='Sum' name='[sum:Bank_Debit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0kk322f0c3gejd12ut93p12rpxpe].[sum:Bank_Debit:qk]</cols>
+      </table>
+      <simple-id uuid='{FE23A222-400A-4067-A39E-B8E58F4C359C}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Treasury Dashboard'>
+      <style />
+      <size maxheight='900' maxwidth='1200' minheight='900' minwidth='1200' preset-index='1' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='14963' id='3' name='Total Bank Inflows' w='98666' x='667' y='29037'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='16889' id='5' name='Total Bank Outflows' w='98666' x='667' y='44000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='21333' id='6' name='Reconciliation Status' w='98666' x='667' y='60889'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='13111' id='7' name='ERP-only Exceptions' w='98666' x='667' y='82222'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='7852' id='8' type-v2='text' w='98666' x='667' y='889'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='16'>GLOBAL TREASURY CASH VISIBILITY &amp; BANK RECONCILIATION </run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>TechGiant Inc. | Illustrative Treasury Case Study | 11 March 2026</run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='12444' id='13' type-v2='text' w='98666' x='667' y='8741'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>TREASURY SNAPSHOT — 11 MAR 2026</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>Bank Inflows: ₹890,000</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>Bank Outflows: ₹717,000</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>Net Bank Movement: ₹173,000</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>ERP Net Movement: ₹17,000</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>Reconciliation Difference: ₹156,000</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>Matched Transactions: 16 / 20</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>Unresolved Bank Exceptions: 4</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>ERP-only Transactions: 2</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='7852' id='14' type-v2='text' w='34916' x='667' y='21185'>
+            <formatted-text>
+              <run fontcolor='#000000' fontname='Benton Sans Book'>BANK NET MOVEMENT</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book'>₹173,000</run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='7852' id='15' type-v2='text' w='30167' x='35583' y='21185'>
+            <formatted-text>
+              <run fontcolor='#000000' fontname='Benton Sans Book'>ERP NET MOVEMENT</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book'>₹17,000</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='7852' id='16' type-v2='text' w='33583' x='65750' y='21185'>
+            <formatted-text>
+              <run fontcolor='#000000' fontname='Benton Sans Book'>NET MOVEMENT DIFFERENCE</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book'>₹156,000</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='3778' id='17' type-v2='text' w='98666' x='667' y='95333'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Arial Rounded MT Bold' fontsize='7'>DATA DISCLAIMER </run>
+              <run fontcolor='#000000' fontname='Arial Rounded MT Bold' fontsize='8'>This is an illustrative treasury case study using simulated bank statement and ERP ledger data. No live bank, SAP or Kyriba integration was performed.</run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1050' minheight='1050' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='20' param='vert' type-v2='layout-flow' w='98666' x='667' y='889'>
+                <zone forceUpdate='true' h='7852' id='8' type-v2='text' w='98666' x='667' y='889'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='16'>GLOBAL TREASURY CASH VISIBILITY &amp; BANK RECONCILIATION </run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>TechGiant Inc. | Illustrative Treasury Case Study | 11 March 2026</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='12444' id='13' type-v2='text' w='98666' x='667' y='8741'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>TREASURY SNAPSHOT — 11 MAR 2026</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>Bank Inflows: ₹890,000</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>Bank Outflows: ₹717,000</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>Net Bank Movement: ₹173,000</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>ERP Net Movement: ₹17,000</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>Reconciliation Difference: ₹156,000</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>Matched Transactions: 16 / 20</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>Unresolved Bank Exceptions: 4</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>ERP-only Transactions: 2</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7852' id='14' type-v2='text' w='34916' x='667' y='21185'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'>BANK NET MOVEMENT</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'>₹173,000</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7852' id='15' type-v2='text' w='30167' x='35583' y='21185'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'>ERP NET MOVEMENT</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'>₹17,000</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7852' id='16' type-v2='text' w='33583' x='65750' y='21185'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'>NET MOVEMENT DIFFERENCE</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'>₹156,000</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='127' h='14963' id='3' is-fixed='true' name='Total Bank Inflows' w='98666' x='667' y='29037'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='144' h='16889' id='5' is-fixed='true' name='Total Bank Outflows' w='98666' x='667' y='44000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='184' h='21333' id='6' is-fixed='true' name='Reconciliation Status' w='98666' x='667' y='60889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='110' h='13111' id='7' is-fixed='true' name='ERP-only Exceptions' w='98666' x='667' y='82222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3778' id='17' type-v2='text' w='98666' x='667' y='95333'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='Arial Rounded MT Bold' fontsize='7'>DATA DISCLAIMER </run>
+                    <run fontcolor='#000000' fontname='Arial Rounded MT Bold' fontsize='8'>This is an illustrative treasury case study using simulated bank statement and ERP ledger data. No live bank, SAP or Kyriba integration was performed.</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{6620FDFD-05DB-442B-82FB-476B2ECB7ACE}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Total Bank Inflows'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kk322f0c3gejd12ut93p12rpxpe].[none:Bank_Reference:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FA4C5F9F-38A4-417B-A7C5-4E2403375623}' />
+    </window>
+    <window class='worksheet' name='Total Bank Outflows'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kk322f0c3gejd12ut93p12rpxpe].[none:Bank_Reference:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0A26F1A9-F36C-4C21-9B25-B3098930E74C}' />
+    </window>
+    <window class='worksheet' name='Reconciliation Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kk322f0c3gejd12ut93p12rpxpe].[none:Bank_Reference:nk]</field>
+            <field>[federated.0kk322f0c3gejd12ut93p12rpxpe].[none:Reconciliation_Status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8ADB5C2B-894B-4E2A-805D-AD64D112627E}' />
+    </window>
+    <window class='worksheet' name='ERP-only Exceptions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kk322f0c3gejd12ut93p12rpxpe].[none:ERP_Description:nk]</field>
+            <field>[federated.0kk322f0c3gejd12ut93p12rpxpe].[none:ERP_Reference:nk]</field>
+            <field>[federated.0kk322f0c3gejd12ut93p12rpxpe].[none:Exception_Status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C12D55D8-DD81-47B6-8E40-0FB13CB62F17}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Treasury Dashboard'>
+      <viewpoints>
+        <viewpoint name='ERP-only Exceptions' />
+        <viewpoint name='Reconciliation Status' />
+        <viewpoint name='Total Bank Inflows'>
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0kk322f0c3gejd12ut93p12rpxpe].[sum:Bank_Credit:qk]</field>
+                    </x-fields>
+                    <y-fields />
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0kk322f0c3gejd12ut93p12rpxpe].[sum:Bank_Credit:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>890000</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='Total Bank Outflows' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{353C1220-4DE7-49EA-8F9C-596DB7017036}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='66' name='ERP-only Exceptions' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Reconciliation Status' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Total Bank Inflows' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACoUlEQVR4nO3cMaoUQQBF0fo9s/9tuAoXYCoiGBhpYmIgIqLTVQbyJzXo4UN7z4kqaF5F
+      Fyrqp7XWGhC1jTHGWms8qgM7ds60sz0f5pwPuXjfdzt2TrOz/fsT+H8JgDQBkCYA0gRAmgBI
+      EwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIuz4f3n78Mr7//H14
+      cO5zbJfjXdmx8xI79wBevX43Pnz6evhiOBNPINIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoA
+      SBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0
+      AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMA
+      aQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAm
+      ANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIg
+      TQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIE
+      QJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCk
+      CYA0AZAmANIEQJoASBMAaU/rr/Hm/efx7cevw4NzzrFtx7uyY+cldu4BzDnH5XI5fPHtdhvX
+      69WOnVPseAKRJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDS
+      BECaAEgTAGkCIO3+34g550MG11pj33c7dk6x8wdJUwNI66WtMAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Total Bank Outflows' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAC+ElEQVR4nO3cMW5rVRSG0X2dzH8ajIIB0CKEREEFDQ0FQghBfA4FSvJeBZbulQjfWk1c
+      WL93cb/IlY+99x6Ius3M7L3nqg4+2u6V227+fPeK7Ud3b68v1lqnHzMzc7/fP9Tuldtufnfl
+      P91HnuXbP78F/r8EQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIE
+      QJoASBMAaQIgTQCkPb+++Pr7n+bX3/88/QPWfc3t6fzOrtq9ctvN7/baM8fMcRwnD8+sveZ2
+      +3c3vwXwxZffzHc//HzuMfAf5ysQaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAm
+      ANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIg
+      TQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIE
+      QJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCk
+      CYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoA
+      SBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0
+      AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMA
+      aQIgTQCkCYC0Y/9tvvr2x/nltz9O/4C11txu53d21e6V225+t/eemZnjOE7ffuTmtwDWWvP0
+      9HT6MS8vL/P8/Pxhdq/cdvO7tdbMzOlxPfos+wpEmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBI
+      EwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgLS337t4/ZmKs+29536/f5jdK7fd/Pnu
+      p3/P9Miz/Bcx/uN1a30rVgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Treasury Dashboard' width='192'>
+      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
+      gg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

@@ -1,0 +1,6 @@
+﻿Account_ID,Legal_Entity,Bank_Name,Currency,Opening_Balance_Local,Net_Bank_Movement_Local,Closing_Balance_Local,Minimum_Reserve_Local,Liquidity_Headroom_Local,Closing_Balance_USD,Liquidity_Headroom_USD,Minimum_Reserve_USD,Liquidity_Status,Available_Cash_USD
+TG-US-001,TechGiant US Inc.,NorthStar Bank,USD,1250000,-10850,1239150,200000,1039150,1239150,1039150,200000,Within reserve,1039150
+TG-US-002,TechGiant US Inc.,Metro Capital Bank,USD,780000,70000,850000,150000,700000,850000,700000,150000,Within reserve,700000
+TG-UK-001,TechGiant UK Ltd.,Crown Union Bank,GBP,450000,-45450,404550,75000,329550,538051.5,438301.5,99750,Within reserve,438301.5
+TG-DE-001,TechGiant GmbH,RheinBank,EUR,620000,15000,635000,100000,535000,736600,620600,115999.99999999999,Within reserve,620600
+TG-IN-001,TechGiant India Pvt Ltd.,Western Peninsula Bank,INR,35000000,-600000,34400000,5000000,29400000,412800,352800,60000,Within reserve,352800

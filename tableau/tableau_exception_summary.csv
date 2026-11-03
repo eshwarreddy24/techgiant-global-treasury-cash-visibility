@@ -1,0 +1,6 @@
+﻿Status,Count,Exception_Type
+Matched,17,Bank-side reconciliation
+Amount mismatch,1,Bank-side reconciliation
+Missing in GL,1,Bank-side reconciliation
+Duplicate in GL,1,Bank-side reconciliation
+GL-only: investigate,1,GL-side completeness

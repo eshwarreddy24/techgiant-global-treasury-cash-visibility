@@ -1,0 +1,21 @@
+﻿Bank_Ref,Value_Date,Account_ID,Currency,Counterparty,Description,Flow_Type,Cash_Impact_Local,Bank_Status,Bank_Statement_ID,Data_Source,FX_to_USD,Cash_Impact_USD
+BT001,2026-10-26,TG-US-001,USD,Client Alpha,Customer receipt,Receipt,220000,Posted,ST-US-1001,Synthetic case-study transaction,1,220000
+BT002,2026-10-26,TG-US-001,USD,Supplier Delta,Supplier payment,Payment,-140000,Posted,ST-US-1001,Synthetic case-study transaction,1,-140000
+BT003,2026-10-27,TG-US-001,USD,Payroll,Monthly payroll,Payment,-90000,Posted,ST-US-1001,Synthetic case-study transaction,1,-90000
+BT004,2026-10-27,TG-US-001,USD,NorthStar Bank,Bank service fee,Payment,-850,Posted,ST-US-1001,Synthetic case-study transaction,1,-850
+BT005,2026-10-28,TG-US-002,USD,TechGiant US Inc.,Intercompany receipt,Receipt,150000,Posted,ST-US-1002,Synthetic case-study transaction,1,150000
+BT006,2026-10-28,TG-US-002,USD,Supplier Omega,Supplier payment,Payment,-210000,Posted,ST-US-1002,Synthetic case-study transaction,1,-210000
+BT007,2026-10-29,TG-US-002,USD,Client Beta,Customer receipt,Receipt,175000,Posted,ST-US-1002,Synthetic case-study transaction,1,175000
+BT008,2026-10-29,TG-US-002,USD,Revenue Authority,Tax payment,Payment,-45000,Posted,ST-US-1002,Synthetic case-study transaction,1,-45000
+BT009,2026-10-26,TG-UK-001,GBP,Customer UK-01,Customer receipt,Receipt,95000,Posted,ST-UK-2001,Synthetic case-study transaction,1.33,126350
+BT010,2026-10-27,TG-UK-001,GBP,Payroll UK,Payroll payment,Payment,-80000,Posted,ST-UK-2001,Synthetic case-study transaction,1.33,-106400
+BT011,2026-10-28,TG-UK-001,GBP,Supplier UK-03,Supplier payment,Payment,-60000,Posted,ST-UK-2001,Synthetic case-study transaction,1.33,-79800
+BT012,2026-10-30,TG-UK-001,GBP,Crown Union Bank,Bank fee,Payment,-450,Posted,ST-UK-2001,Synthetic case-study transaction,1.33,-598.5
+BT013,2026-10-26,TG-DE-001,EUR,Customer DE-02,Customer receipt,Receipt,150000,Posted,ST-DE-3001,Synthetic case-study transaction,1.16,174000
+BT014,2026-10-27,TG-DE-001,EUR,Supplier DE-10,Supplier payment,Payment,-120000,Posted,ST-DE-3001,Synthetic case-study transaction,1.16,-139200
+BT015,2026-10-28,TG-DE-001,EUR,Tax Office,VAT payment,Payment,-35000,Posted,ST-DE-3001,Synthetic case-study transaction,1.16,-40600
+BT016,2026-10-29,TG-DE-001,EUR,FX Settlement,FX settlement receipt,Receipt,20000,Posted,ST-DE-3001,Synthetic case-study transaction,1.16,23200
+BT017,2026-10-26,TG-IN-001,INR,Customer India-01,Customer receipt,Receipt,7500000,Posted,ST-IN-4001,Synthetic case-study transaction,0.012,90000
+BT018,2026-10-27,TG-IN-001,INR,Vendor India-03,Vendor payment,Payment,-5200000,Posted,ST-IN-4001,Synthetic case-study transaction,0.012,-62400
+BT019,2026-10-28,TG-IN-001,INR,Payroll India,Payroll payment,Payment,-2100000,Posted,ST-IN-4001,Synthetic case-study transaction,0.012,-25200
+BT020,2026-10-29,TG-IN-001,INR,Tax Authority,Tax payment,Payment,-800000,Posted,ST-IN-4001,Synthetic case-study transaction,0.012,-9600

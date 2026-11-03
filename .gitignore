@@ -1,0 +1,13 @@
+# Local tool outputs and temporary files
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Do not publish local credentials or environment files
+.env
+.env.*
+!.env.example
+
+# Keep evidence intentional and sanitized
+evidence/private/

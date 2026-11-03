@@ -1,0 +1,6 @@
+﻿Account_ID,Legal_Entity,Bank_Name,Country,Currency,Opening_Balance_Local,Minimum_Reserve_Local,Data_Source
+TG-US-001,TechGiant US Inc.,NorthStar Bank,United States,USD,1250000,200000,Synthetic case-study assumption
+TG-US-002,TechGiant US Inc.,Metro Capital Bank,United States,USD,780000,150000,Synthetic case-study assumption
+TG-UK-001,TechGiant UK Ltd.,Crown Union Bank,United Kingdom,GBP,450000,75000,Synthetic case-study assumption
+TG-DE-001,TechGiant GmbH,RheinBank,Germany,EUR,620000,100000,Synthetic case-study assumption
+TG-IN-001,TechGiant India Pvt Ltd.,Western Peninsula Bank,India,INR,35000000,5000000,Synthetic case-study assumption

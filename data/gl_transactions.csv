@@ -1,0 +1,22 @@
+﻿GL_Ref,Posting_Date,Account_ID,Currency,GL_Document,GL_Cash_Impact_Local,GL_Status,Data_Source
+BT001,2026-10-26,TG-US-001,USD,JE-9001,220000,Posted,Synthetic case-study transaction
+BT002,2026-10-26,TG-US-001,USD,JE-9002,-140000,Posted,Synthetic case-study transaction
+BT003,2026-10-27,TG-US-001,USD,JE-9003,-89500,Posted,Deliberate amount mismatch for training
+BT005,2026-10-28,TG-US-002,USD,JE-9005,150000,Posted,Synthetic case-study transaction
+BT006,2026-10-28,TG-US-002,USD,JE-9006,-210000,Posted,Synthetic case-study transaction
+BT007,2026-10-29,TG-US-002,USD,JE-9007,175000,Posted,Synthetic case-study transaction
+BT008,2026-10-29,TG-US-002,USD,JE-9008,-45000,Posted,Synthetic case-study transaction
+BT009,2026-10-26,TG-UK-001,GBP,JE-9009,95000,Posted,Synthetic case-study transaction
+BT010,2026-10-27,TG-UK-001,GBP,JE-9010,-80000,Posted,Synthetic case-study transaction
+BT011,2026-10-28,TG-UK-001,GBP,JE-9011,-60000,Posted,Synthetic case-study transaction
+BT012,2026-10-30,TG-UK-001,GBP,JE-9012,-450,Posted,Synthetic case-study transaction
+BT013,2026-10-26,TG-DE-001,EUR,JE-9013,150000,Posted,Synthetic case-study transaction
+BT014,2026-10-27,TG-DE-001,EUR,JE-9014A,-120000,Posted,First line of deliberate duplicate for training
+BT014,2026-10-27,TG-DE-001,EUR,JE-9014B,-120000,Posted,Second line of deliberate duplicate for training
+BT015,2026-10-28,TG-DE-001,EUR,JE-9015,-35000,Posted,Synthetic case-study transaction
+BT016,2026-10-29,TG-DE-001,EUR,JE-9016,20000,Posted,Synthetic case-study transaction
+BT017,2026-10-26,TG-IN-001,INR,JE-9017,7500000,Posted,Synthetic case-study transaction
+BT018,2026-10-27,TG-IN-001,INR,JE-9018,-5200000,Posted,Synthetic case-study transaction
+BT019,2026-10-28,TG-IN-001,INR,JE-9019,-2100000,Posted,Synthetic case-study transaction
+BT020,2026-10-29,TG-IN-001,INR,JE-9020,-800000,Posted,Synthetic case-study transaction
+GL999,2026-10-30,TG-US-001,USD,JE-9999,-42000,Posted,Deliberate GL-only entry for training
