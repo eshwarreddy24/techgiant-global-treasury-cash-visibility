@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="3D financial data transformation icon">
+  <defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c4b5fd"/><stop offset="1" stop-color="#7c3aed"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-opacity=".25"/></filter></defs>
+  <g filter="url(#s)"><path d="M80 10 140 42 80 74 20 42Z" fill="url(#a)"/><path d="M20 42v72l60 36V74Z" fill="#5b21b6"/><path d="M140 42v72l-60 36V74Z" fill="#312e81"/><path d="M46 91h30V76h9v15h29l-34 40Z" fill="#f5f3ff"/><path d="M46 111h30v15H46z" fill="#ddd6fe"/></g>
+</svg>

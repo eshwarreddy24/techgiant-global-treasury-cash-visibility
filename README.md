@@ -5,8 +5,8 @@
 <h1 align="center">TechGiant Global Treasury Cash Visibility</h1>
 
 <p align="center">
-  <strong>Bank-to-GL reconciliation, liquidity analysis, and four-week cash forecasting</strong><br>
-  Independent synthetic case study for Treasury Management System implementation and Finance Transformation roles.
+  <strong>Bank-to-GL reconciliation, cash visibility and liquidity analysis</strong><br>
+  An independent treasury case study built from a fictional multinational dataset.
 </p>
 
 <p align="center">
@@ -17,18 +17,26 @@
   <img src="https://img.shields.io/badge/Alteryx-planned%20guide-64748b" alt="Alteryx planned guide">
 </p>
 
-> **Portfolio scope:** This is a fictional, synthetic treasury case study. It demonstrates the analysis and control design expected in a treasury transformation project; it is not a live TechGiant engagement, bank connection, SAP integration, Kyriba implementation, or production payment process.
+<p align="center">
+  <img src="docs/images/techgiant-logo.svg" alt="TechGiant Treasury Transformation logo" width="420">
+</p>
+
+> **What this is:** I built this as a practical treasury exercise: bring together bank activity, GL postings, FX assumptions and reserve rules, then show what the numbers say and where the controls need attention. TechGiant, the banks and all financial data are fictional.
 
 ## Executive summary
 
-TechGiant Inc. is modelled as a multinational group with five bank accounts across four currencies and four legal entities. The project creates a consolidated USD cash view, reconciles bank statement movements to ERP/GL postings, isolates accounting exceptions, and prepares an illustrative four-week liquidity scenario.
+I modelled TechGiant Inc. as a multinational group with five bank accounts across four currencies and four legal entities. I brought the source files together, translated the cash position into USD, compared bank movements with GL postings, isolated exceptions and built an illustrative four-week liquidity scenario.
 
 The model keeps two management questions separate:
 
 1. **How much cash is visible?** Opening balances plus bank-statement movements, translated into USD.
 2. **Can the cash be trusted?** Bank-to-GL controls, duplicate detection, missing postings, variances, and GL-only items.
 
-This separation prevents a clean-looking cash total from being mistaken for proof that bank-to-book controls are complete.
+Keeping the two views separate matters: a cash total can be correct even when the supporting bank-to-book controls still need work.
+
+<p align="center">
+  <img src="docs/images/global-treasury-illustration.svg" alt="Regional bank accounts feeding a central treasury hub" width="100%">
+</p>
 
 ## Key KPIs
 
@@ -76,7 +84,7 @@ Global treasury teams often receive cash data from multiple banks while accounti
 | Financial model | Excel workbook with linked formulas, control tests, cash position, and forecast |
 | Reconciliation | Composite matching on reference, account, and currency |
 | Reporting | Tableau-ready CSV extracts and supplied reference previews |
-| Planned transformation path | Alteryx workflow guide and Kyriba/TMS integration research |
+| Transformation path | Alteryx rebuild guide, historical Tableau prototype evidence and Kyriba/TMS integration research |
 
 ## Reconciliation methodology
 
@@ -143,6 +151,18 @@ The repository includes supplied reference previews for the Excel model and fore
 |---|---|
 | ![Excel dashboard preview](TechGiant_Dashboard_Preview.png) | ![Excel forecast preview](TechGiant_Forecast_Preview.png) |
 
+## The work behind the screens
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/images/icon-bank-account.svg" alt="Bank account icon" width="92"><br><strong>Bank feeds</strong><br>Account and transaction inputs</td>
+    <td align="center"><img src="docs/images/icon-reconciliation.svg" alt="Reconciliation icon" width="92"><br><strong>Reconciliation</strong><br>Bank and GL control checks</td>
+    <td align="center"><img src="docs/images/icon-liquidity.svg" alt="Liquidity icon" width="92"><br><strong>Liquidity</strong><br>Reserves and headroom</td>
+    <td align="center"><img src="docs/images/icon-forecast.svg" alt="Forecast icon" width="92"><br><strong>Forecast</strong><br>Four-week scenario view</td>
+    <td align="center"><img src="docs/images/icon-data-flow.svg" alt="Data transformation icon" width="92"><br><strong>Data flow</strong><br>Repeatable validation</td>
+  </tr>
+</table>
+
 ## Tools and implementation status
 
 | Capability | Status |
@@ -150,8 +170,10 @@ The repository includes supplied reference previews for the Excel model and fore
 | Excel cash model and linked control formulas | Included |
 | Python source-derived validation | Included and tested |
 | Tableau-ready extracts | Included and validated |
+| Alteryx workflow evidence | Historical screenshots in supplied reference PDF; rebuild guide provided |
+| Tableau prototype evidence | Historical screenshots in supplied reference PDF; current extracts provided |
 | Native Tableau workbook | Not verified; legacy XML artifact quarantined |
-| Native Alteryx `.yxmd` workflow | Not included; build guide provided |
+| Native Alteryx `.yxmd` workflow | Not included |
 | Kyriba API research | Documentation/design research only |
 | SAP, bank connectivity, SWIFT, live TMS, or production payments | Not implemented |
 
@@ -167,10 +189,16 @@ See [`docs/implementation-status.md`](docs/implementation-status.md) for the evi
 | [`scripts/validate_project.py`](scripts/validate_project.py) | Source-derived validation entry point |
 | [`tests/`](tests/) | Automated regression tests |
 | [`tableau/`](tableau/) | Validated Tableau-ready extracts and status guide |
-| [`docs/`](docs/) | Architecture, assumptions, status, audit, and metadata guides |
+| [`docs/`](docs/) | Architecture, assumptions, status, audit, evidence, and metadata guides |
 | [`documentation/`](documentation/) | Detailed Alteryx, Tableau, Kyriba, interview, and resume notes |
 | [`evidence/`](evidence/) | Supplied reference PDFs and evidence notes |
 | [`docs/images/`](docs/images/) | Original local SVG visual assets |
+
+Tool-specific evidence:
+
+- [`Alteryx implementation evidence`](docs/tool-evidence/Alteryx_Implementation_Evidence.md)
+- [`Tableau implementation evidence`](docs/tool-evidence/Tableau_Implementation_Evidence.md)
+- [`Tool competency matrix`](docs/Tool_Competency_Matrix.md)
 
 ## Setup and execution
 
@@ -196,14 +224,14 @@ The project uses the Python standard library for validation and tests. No API ke
 
 See [`docs/audit-checklist.md`](docs/audit-checklist.md) for the completed correction audit.
 
-## Business value
+## What I would show in an interview
 
-The case study demonstrates a practical finance-transformation mindset: define the control objective, normalize source data, establish deterministic matching rules, quantify exceptions, separate cash visibility from data-quality confidence, and document the path from prototype analysis to a future TMS operating model.
+I would walk through the matching rule, explain why BT014 is a duplicate GL reference rather than proof of a duplicate payment, trace the USD 3.78M closing cash figure back to the bank movements, and show how the Python checks protect the Excel and Tableau-ready outputs from silent changes.
 
 ## Limitations and future enhancements
 
-- Build and execute a genuine Alteryx workflow, then add the `.yxmd` and run evidence.
-- Build and reopen a native Tableau workbook, then add the verified `.twb/.twbx`.
+- Build and execute a native Alteryx workflow, then add the `.yxmd` and run evidence.
+- Rebuild and reopen a native Tableau workbook, then add the verified `.twb/.twbx` and current USD screenshots.
 - Add a sanctioned API sandbox integration only with documented authorization and sanitized evidence.
 - Add exception ageing, ownership, remediation status, and approval workflow.
 - Add real forecast accuracy evaluation only when historical actuals exist.
