@@ -9,6 +9,7 @@ from __future__ import annotations
 import csv
 import re
 import sys
+import zipfile
 from collections import Counter, defaultdict
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
@@ -256,10 +257,23 @@ def main() -> int:
         raise ValueError(f"Possible credential files found: {flagged}")
     if (TABLEAU / "TechGiant_Global_Treasury_Dashboard.twbx").exists():
         raise ValueError("A file named .twbx exists but has not been verified as a native Tableau package")
+    workbook = ROOT / "TechGiant_Global_Cash_Visibility_Project.xlsx"
+    with zipfile.ZipFile(workbook) as archive:
+        worksheet_xml = [
+            name for name in archive.namelist()
+            if name.startswith("xl/worksheets/") and name.endswith(".xml")
+        ]
+        formula_tags = sum(
+            archive.read(name).count(b"<f") + archive.read(name).count(b":f")
+            for name in worksheet_xml
+        )
+    if formula_tags == 0:
+        raise ValueError("Excel workbook contains no formula cells")
 
     print("PASS: source-derived TechGiant treasury validation succeeded.")
     print(f"  Accounts: {len(accounts)} | Entities: {len({row['Legal_Entity'] for row in accounts})} | Currencies: {len(valid_currencies)}")
     print(f"  Bank rows: {len(bank)} | GL rows: {len(gl)} | Forecast rows: {len(forecast)}")
+    print(f"  Excel formula tags inspected: {formula_tags}")
     print(f"  Closing cash: USD {closing_cash:,.2f} | Minimum reserves: USD {reserve:,.2f} | Headroom: USD {headroom:,.2f}")
     print(f"  Exceptions: {dict(status_counts)}")
     return 0
