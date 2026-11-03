@@ -31,7 +31,7 @@ Create the empty GitHub repository first, then replace `<your-username>` with yo
 
 ## Suggested GitHub description
 
-> Independent synthetic treasury case study demonstrating global cash visibility, bank-to-GL reconciliation, liquidity forecasting, exception controls, and TMS implementation thinking using Excel, Alteryx, Tableau, and Kyriba API research.
+> Independent treasury case study showing global cash visibility, bank-to-GL reconciliation, liquidity analysis and four-week cash forecasting with Excel and Python, supported by historical Alteryx and Tableau workflow evidence.
 
 ## Suggested topics
 

@@ -4,7 +4,7 @@ These are recommended manual GitHub settings. They are intentionally not applied
 
 ## About description
 
-> Independent synthetic treasury case study demonstrating multi-entity cash visibility, bank-to-GL reconciliation, liquidity analysis, four-week cash forecasting and financial controls using Excel and Python, with Tableau and Alteryx implementation guides.
+> Independent treasury case study showing multi-entity cash visibility, bank-to-GL reconciliation, liquidity analysis and four-week cash forecasting with Excel and Python, supported by historical Alteryx and Tableau workflow evidence.
 
 ## Topics
 

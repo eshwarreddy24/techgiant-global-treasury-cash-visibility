@@ -238,4 +238,4 @@ I would walk through the matching rule, explain why BT014 is a duplicate GL refe
 
 ## Synthetic-data declaration
 
-All company names, banks, account identifiers, counterparties, balances, transactions, FX rates, and forecast assumptions are fictional and created for portfolio demonstration.
+All company names, banks, account identifiers, counterparties, balances, transactions, FX rates, and forecast assumptions are fictional and created for this independent case study.
